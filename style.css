@@ -157,6 +157,16 @@ select:not(.bigger):hover {
 .custom-file-input:hover {
   background-color: var(--button-color-hover);
 }
+}
+
+#data-loaded {
+    margin-left: auto; /* Pushes the text to the right */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.custom-file-input.margin {
+    min-width: 150px; /* Set minimum width to fit the text */
+}
 .csv {
   width: 100px;
 }
@@ -695,7 +705,7 @@ ul:not(.info) {
 }
 .period-info {
   margin-top: 50px;
-  width: 1100px;
+  width: 1100px; 
 }
 ul:not(.period):not(.info) {
   height: 500px;
