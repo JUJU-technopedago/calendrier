@@ -12,6 +12,21 @@
     <link rel="icon" type="image/x-icon" href="icon.png" />
   </head>
   <body>
+    // Ensure the file input is triggered when the "Importer CSV" button is clicked
+document.getElementById('import-csv-btn').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default link behavior
+  document.getElementById('file-input').click(); // Trigger the file input click
+});
+
+// Optional: Handle file upload when a file is selected
+function handleFileUpload() {
+  const fileInput = document.getElementById('file-input');
+  if (fileInput.files.length > 0) {
+    // Handle the file upload here
+    console.log('File selected:', fileInput.files[0].name);
+    document.getElementById('data-loaded').textContent = 'Données chargées'; // Update the message
+  }
+}
 <div class="credits">
   Imaginé par <strong>Julien MARTINEZ-MONNIELLO</strong><br>
   Développé par <strong>Thomas GOUROUZA</strong>
