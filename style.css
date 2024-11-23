@@ -154,7 +154,7 @@ select:not(.bigger):hover {
     padding: 5px 10px; /* Padding to make it look like a button */
     text-decoration: none; /* Removes underline from links if used on <a> */
     cursor: pointer; /* Cursor indicates clickable item */
-    margin-right: 10px; /* Space after the button */
+    display: inline-block; /* Ensures label behaves like a button */
 }
 .custom-file-input:hover {
   background-color: var(--button-color-hover);
