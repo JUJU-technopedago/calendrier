@@ -149,18 +149,18 @@ select:not(.bigger):hover {
   margin-right: 15px;
 }
 .custom-file-input, a.custom-file-input {
-    background-color: #ffffff; /* White background for the button */
-    border: 1px solid #ccc; /* Gray border */
-    padding: 8px 15px; /* Padding inside the button */
-    font-size: 14px; /* Font size */
-    color: #333; /* Text color */
-    text-align: center; /* Centers text */
-    cursor: pointer; /* Pointer cursor on hover */
-    text-decoration: none; /* No underline for the link */
-    border-radius: 4px; /* Rounded corners for the button */
-    display: inline-flex; /* Inline flex container for centering content */
-    align-items: center; /* Center alignment of the text/icon */
-    justify-content: center; /* Center justification for content */
+    background-color: #ffffff;  // White background for both buttons
+    border: 1px solid #ccc;  // Gray border around the buttons
+    padding: 8px 15px;  // Padding inside the buttons
+    font-size: 14px;  // Font size for the text inside the buttons
+    color: #333;  // Dark gray font color for both buttons
+    text-align: center;  // Centers the text inside the buttons
+    cursor: pointer;  // Changes cursor to pointer when hovering over the buttons
+    text-decoration: none;  // Removes any underline from links
+    border-radius: 4px;  // Rounded corners for a softer look
+    display: inline-flex;  // Inline flex to keep label/button inline with other elements
+    align-items: center;  // Vertically center the contents of the buttons
+    justify-content: center;  // Horizontally center the contents of the buttons
 }
 .custom-file-input:hover {
   background-color: var(--button-color-hover);
