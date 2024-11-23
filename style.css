@@ -708,6 +708,28 @@ ul.levels-ul {
 #erase-constraints {
   width: 120px;
 }
+/* Style the container of the buttons */
+#csv-model-wrapper {
+  display: flex; /* Enables flexbox */
+  gap: 10px; /* Adds spacing between the buttons */
+  justify-content: center; /* Centers the buttons horizontally */
+  margin-top: 20px; /* Adjusts vertical space */
+}
+
+/* Optional: Style for the buttons themselves */
+#csv-model-wrapper button {
+  padding: 10px 20px; /* Adjusts the size of the buttons */
+  background-color: #cfe2f3; /* Background color */
+  border: 1px solid #a6b8d9; /* Border for buttons */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+#csv-model-wrapper button:hover {
+  background-color: #b1c9eb; /* Changes color on hover */
+}
+
 .credits {
   position: absolute;
   top: 0;
