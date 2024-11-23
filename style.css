@@ -158,7 +158,22 @@ select:not(.bigger):hover {
   background-color: var(--button-color-hover);
 }
 }
+.file-upload-group {
+    display: flex;
+    align-items: center; /* Ensure items are vertically centered */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if space is insufficient */
+}
 
+.button-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    flex-grow: 1; /* Allows the container to take up available space */
+    white-space: nowrap; /* Prevents text inside from wrapping */
+}
+
+.hidden {
+    display: none; /* Keeps input hidden as you already have */
+}
 #data-loaded {
     margin-left: auto; /* Pushes the text to the right */
     white-space: nowrap; /* Prevent text from wrapping */
