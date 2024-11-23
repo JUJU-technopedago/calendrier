@@ -125,29 +125,36 @@ select {
   font-weight: 500;
   font-family: var(--font-family);
 }
+
 input,
 select {
   background-color: var(--input-color);
 }
+
 button:not(.reset),
 input,
 select.bigger {
   padding: 4px 8px;
 }
+
 input:hover,
 select.bigger:hover {
   background-color: var(--input-color-hover);
 }
+
 select:not(.bigger):hover {
   background-color: rgb(245, 245, 245);
 }
+
 #file-input-constraints,
 #file-input {
   display: none;
 }
+
 .margin {
   margin-right: 15px;
 }
+
 .custom-file-input {
   display: inline-block;
   padding: 4px 8px;
@@ -158,512 +165,80 @@ select:not(.bigger):hover {
   cursor: pointer;
   font-size: small;
 }
+
 .custom-file-input:hover {
   background-color: var(--button-color-hover);
 }
+
 .csv {
   width: 100px;
 }
+
 button:not(.csv):not(.generate):not(.reset),
 input[type="submit"]:not(.add) {
   width: 140px;
 }
+
 button.generate {
   width: 200px;
 }
+
 button:not(.reset),
 input[type="submit"]:not(.add) {
   height: 30px;
   margin-right: 30px;
 }
+
 button,
 input[type="submit"]:not(.add) {
   background-color: var(--button-color);
 }
+
 button:hover,
 input[type="submit"]:not(.add):hover {
-  background-color: var(--button-color-hover);
+  background_color: var(--button-color-hover);
 }
+
 button.navigation,
 input[type="submit"].navigation {
-  background-color: var(--navigation-button-color);
+  background_color: var(--navigation-button-color);
   font-size: medium;
 }
+
 button.navigation:hover,
 input[type="submit"].navigation:hover {
-  background-color: var(--navigation-button-color-hover);
+  background_color: var(--navigation-button-color-hover);
 }
+
 button.reset {
   height: 30px;
   width: 30px;
 }
 
-/* Calendar */
-div#calendar-wrapper {
-  margin-top: 38px;
-  min-width: var(--page-width);
-}
-div#lessons-wrapper {
-  margin-top: 50px;
-  height: 200px;
-}
-table.calendar {
-  margin-top: var(--table-margin-top);
-  border-collapse: separate;
-  border-spacing: 0px;
-  border-radius: var(--table-border-radius);
-  box-shadow: var(--box-shadow);
-}
-table.calendar thead tr th {
-  height: var(--table-header-height);
-}
-/* Titre du tableau */
-table.calendar thead tr:first-child th:first-child {
-  border-radius: var(--table-border-radius) 0 0 0;
-  background-color: var(--table-header-title);
-  border-left: var(--table-border);
-}
-table.calendar thead tr:last-child th:first-child {
-  background-color: var(--table-header-title);
-  border-left: var(--table-border);
-  border-right: var(--table-border);
-  border-bottom: var(--table-border);
-}
-table.calendar thead tr:first-child th:last-child {
-  border-radius: 0 var(--table-border-radius) 0 0;
-}
-table.calendar thead tr {
-  font-size: x-small;
-}
-table.calendar thead tr:first-child th:not(:first-child):not(.weekend) {
-  /* Les jours */
-  border-left: none;
-  border-bottom: var(--table-border);
-}
-table.calendar thead tr:last-child th:not(:first-child):not(.weekend) {
-  border-right: var(--table-border);
-  border-bottom: var(--table-border-thick);
-}
-table.calendar thead tr th:not(:first-child):not(.weekend):not(.holiday):not(.closed) {
-  background-color: var(--table-header-day);
-}
-table.calendar thead tr:first-child th {
-  border-top: var(--table-border);
-}
-table.calendar thead tr:first-child th:not(.weekend) {
-  border-right: var(--table-border);
-}
-table.calendar tbody tr {
-  font-size: x-small;
-}
-table.calendar tbody tr td:first-child {
-  border-right: var(--table-border-thick);
-}
-table.calendar tbody tr:last-child td {
-  border-bottom: var(--table-border);
-}
-table.calendar tbody tr:last-child td:last-child {
-  border-radius: 0 0 var(--table-border-radius) 0;
-}
-table.calendar tbody tr:last-child td:first-child {
-  border-radius: 0 0 0 var(--table-border-radius);
-}
-table.calendar tbody tr td {
-  border-bottom: var(--table-border);
-  height: var(--table-content-td-height);
-  text-align: center;
-}
-/* Les heures */
-table.calendar tbody tr td:first-child {
-  background-color: var(--table-time);
-  width: var(--table-time-td-width);
-  min-width: var(--table-time-td-width);
-  border-left: var(--table-border);
-  font-weight: bold;
-}
-/* Le contenu */
-table.calendar tbody tr td:not(:first-child):not(.weekend) {
-  width: var(--table-content-td-width);
-  min-width: var(--table-content-td-width);
-  border-right: var(--table-border);
-}
-table.calendar .booked,
-table.calendar .free {
-  cursor: pointer;
-}
-table.calendar tbody tr td:not(:first-child).booked.highlighted-lesson {
-  opacity: var(--highlighted-lesson-opacity);
-}
-
-table.calendar th.weekend,
-table.calendar td.weekend {
-  background-color: var(--table-weekend-color);
-  border-bottom: none;
-  width: var(--table-weekend-width);
-  min-width: var(--table-weekend-width);
-}
-
-table.calendar th.holiday,
-table.calendar td.holiday {
-  background-color: var(--table-holiday-color);
-}
-
-table.calendar th.closed,
-table.calendar td.closed {
-  background-color: var(--table-closed-color);
-}
-
-table.calendar
-  tbody
-  tr
-  td:not(:first-child):not(.booked):not(.weekend):not(.holiday):not(.closed) {
-  background-color: var(--table-content-calendar);
-}
-
-/* Lessons */
-table.lessons {
-  margin-top: var(--table-lesson-margin-top);
-  border-collapse: separate;
-  border-spacing: 0px;
-  border-radius: var(--table-border-radius);
-  box-shadow: var(--box-shadow);
-}
-table.lessons thead tr th {
-  height: var(--table-lesson-header-height);
-  border: var(--table-border);
-  border-bottom: var(--table-border-thick);
-  background-color: var(--table-lesson-header);
-}
-table.lessons thead tr th:not(:last-child) {
-  width: var(--table-lesson-content-td-width);
-  min-width: var(--table-lesson-content-td-width);
-}
-table.lessons thead tr th:last-child {
-  width: var(--table-lesson-action-td-width);
-  min-width: var(--table-lesson-action-td-width);
-}
-table.lessons thead tr th:first-child {
-  border-radius: var(--table-border-radius) 0 0 0;
-}
-table.lessons thead tr th:not(:first-child) {
-  border-left: none;
-}
-table.lessons thead tr th:last-child {
-  border-radius: 0 var(--table-border-radius) 0 0;
-}
-table.lessons tbody tr:not(:first-child) td:first-child {
-  text-align: left;
-  padding-left: 15px;
-}
-table.lessons tbody tr form {
-  border-left: var(--table-border);
-}
-table.lessons tbody tr td {
-  background-color: var(--table-lesson-content);
-  height: var(--table-lesson-content-td-height);
-  text-align: center;
-  border-right: var(--table-border);
-  border-bottom: var(--table-border);
-  font-size: small;
-}
-table.lessons tbody tr td:first-child {
-  border-left: var(--table-border);
-}
-table.lessons tbody tr td:not(:first-child) {
-  border-left: none;
-}
-table.lessons tbody tr:last-child td:last-child {
-  border-radius: 0 0 var(--table-border-radius) 0;
-}
-table.lessons tbody tr:last-child td:first-child {
-  border-radius: 0 0 0 var(--table-border-radius);
-}
-table.lessons input:not([type="submit"]),
-table.lessons select {
-  width: var(--input-select-width);
-  min-width: var(--input-select-width);
-}
-table.lessons input[type="submit"],
-table.lessons div.button {
-  color: white;
-  padding: 5px 10px;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  font-size: small;
-}
-table.lessons input[type="submit"] {
-  background-color: var(--table-button-add);
-}
-table.lessons input[type="submit"]:hover {
-  background-color: var(--table-button-add-hover);
-}
-table.lessons div.button {
-  background-color: var(--table-button-remove);
-}
-table.lessons div.button:hover {
-  background-color: var(--table-button-remove-hover);
-}
-
-/* Dans le tableau des leçons */
-
-td div.two-col-td {
+.flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-td div.two-col-td div:first-child {
-  margin-left: 20px;
-}
-td div.two-col-td div:last-child {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-right: 15px;
+  flex-direction: column;
 }
 
-/* Teachers */
-table.teachers {
-  margin-top: var(--table-teacher-margin-top);
-  border-collapse: separate;
-  border-spacing: 0px;
-  border-radius: var(--table-border-radius);
-  box-shadow: var(--box-shadow);
-}
-table.teachers thead tr th {
-  height: var(--table-teacher-header-height);
-  border: var(--table-border);
-  border-bottom: var(--table-border-thick);
-  background-color: var(--table-teacher-header);
-}
-table.teachers thead tr th:first-child {
-  border-radius: var(--table-border-radius) 0 0 0;
-}
-table.teachers thead tr th:not(:first-child) {
-  border-left: none;
-}
-table.teachers thead tr th:last-child {
-  border-radius: 0 var(--table-border-radius) 0 0;
-}
-table.teachers tbody tr form {
-  border-left: var(--table-border);
-}
-table.teachers tbody tr td {
-  background-color: var(--table-teacher-content);
-  height: var(--table-teacher-content-td-height);
-  text-align: center;
-  border-right: var(--table-border);
-  border-bottom: var(--table-border);
-  font-size: small;
-}
-table.teachers tbody tr td:not(:first-child):not(:nth-child(4)) {
-  width: var(--table-teacher-content-td-width);
-  min-width: var(--table-teacher-content-td-width);
-}
-table.teachers tbody tr td:first-child {
-  width: var(--table-teacher-content-td-width-smaller);
-  min-width: var(--table-teacher-content-td-width-smaller);
-}
-table.teachers tbody tr td:nth-child(4) {
-  width: var(--table-teacher-content-td-width-larger);
-  min-width: var(--table-teacher-content-td-width-larger);
-}
-table.teachers tbody tr td:first-child {
-  border-left: var(--table-border);
-}
-table.teachers tbody tr td:not(:first-child) {
-  border-left: none;
-}
-table.teachers tbody tr:last-child td:last-child {
-  border-radius: 0 0 var(--table-border-radius) 0;
-}
-table.teachers tbody tr:last-child td:first-child {
-  border-radius: 0 0 0 var(--table-border-radius);
-}
-
-/* Levels */
-table.levels {
-  margin-top: var(--table-level-margin-top);
-  border-collapse: separate;
-  border-spacing: 0px;
-  border-radius: var(--table-border-radius);
-  box-shadow: var(--box-shadow);
-}
-table.levels thead tr th {
-  height: var(--table-level-header-height);
-  border: var(--table-border);
-  border-bottom: var(--table-border-thick);
-  background-color: var(--table-level-header);
-}
-table.levels thead tr th:first-child {
-  border-radius: var(--table-border-radius) 0 0 0;
-}
-table.levels thead tr th:not(:first-child) {
-  border-left: none;
-}
-table.levels thead tr th:last-child {
-  border-radius: 0 var(--table-border-radius) 0 0;
-}
-table.levels tbody tr form {
-  border-left: var(--table-border);
-}
-table.levels tbody tr td {
-  background-color: var(--table-level-content);
-  height: var(--table-level-content-td-height);
-  text-align: center;
-  border-right: var(--table-border);
-  border-bottom: var(--table-border);
-  font-size: small;
-}
-table.levels tbody tr td:first-child {
-  width: var(--table-level-content-td-level-width);
-  min-width: var(--table-level-content-td-level-width);
-}
-table.levels tbody tr td:last-child {
-  width: var(--table-level-content-td-width);
-  min-width: var(--table-level-content-td-width);
-}
-
-table.levels tbody tr td:first-child {
-  border-left: var(--table-border);
-}
-table.levels tbody tr td:not(:first-child) {
-  border-left: none;
-}
-table.levels tbody tr:last-child td:last-child {
-  border-radius: 0 0 var(--table-border-radius) 0;
-}
-table.levels tbody tr:last-child td:first-child {
-  border-radius: 0 0 0 var(--table-border-radius);
-}
-
-/* Parameter */
-h1.parameters {
-  margin-top: 80px;
-}
-h1.teachers-levels {
-  margin-top: 110px;
-}
-table.parameter {
-  margin-top: var(--table-parameter-margin-top);
-  border-collapse: separate;
-  border-spacing: 0px;
-  border-radius: var(--table-border-radius);
-  box-shadow: var(--box-shadow);
-}
-table.parameter thead tr th {
-  height: var(--table-parameter-header-height);
-  border: var(--table-border);
-  border-bottom: var(--table-border-thick);
-  background-color: var(--table-parameter-header);
-}
-table.parameter thead tr th:first-child {
-  border-radius: var(--table-border-radius) 0 0 0;
-}
-table.parameter thead tr th:not(:first-child) {
-  border-left: none;
-}
-table.parameter thead tr th:last-child {
-  border-radius: 0 var(--table-border-radius) 0 0;
-}
-table.parameter tbody tr form {
-  border-left: var(--table-border);
-}
-table.parameter tbody tr td {
-  background-color: var(--table-parameter-content);
-  height: var(--table-parameter-content-td-height);
-  text-align: center;
-  border-right: var(--table-border);
-  border-bottom: var(--table-border);
-  font-size: small;
-  width: var(--table-parameter-content-td-width);
-  min-width: var(--table-parameter-content-td-width);
-}
-
-table.parameter tbody tr td:first-child {
-  border-left: var(--table-border);
-}
-table.parameter tbody tr td:not(:first-child) {
-  border-left: none;
-}
-table.parameter tbody tr:last-child td:last-child {
-  border-radius: 0 0 var(--table-border-radius) 0;
-}
-table.parameter tbody tr:last-child td:first-child {
-  border-radius: 0 0 0 var(--table-border-radius);
-}
-table.parameter tbody tr td input {
-  width: 60%;
-}
-
-/* Open days */
-
-table.open-days {
-  margin-top: var(--table-open-days-margin-top);
-  border-collapse: separate;
-  border-spacing: 0px;
-  border-radius: var(--table-border-radius);
-  box-shadow: var(--box-shadow);
-}
-table.open-days thead tr th {
-  height: var(--table-open-days-header-height);
-  border: var(--table-border);
-  border-bottom: var(--table-border-thick);
-  background-color: var(--table-open-days-header);
-}
-table.open-days thead tr th:first-child {
-  border-radius: var(--table-border-radius) 0 0 0;
-}
-table.open-days thead tr th:not(:first-child) {
-  border-left: none;
-}
-table.open-days thead tr th:last-child {
-  border-radius: 0 var(--table-border-radius) 0 0;
-}
-table.open-days tbody tr form {
-  border-left: var(--table-border);
-}
-table.open-days tbody tr td {
-  background-color: var(--table-open-days-content);
-  height: var(--table-open-days-content-td-height);
-  text-align: center;
-  border-right: var(--table-border);
-  border-bottom: var(--table-border);
-  font-size: small;
-}
-table.open-days tbody tr td:first-child {
-  width: var(--table-open-days-content-td-day-width);
-  min-width: var(--table-open-days-content-td-day-width);
-}
-table.open-days tbody tr td:last-child {
-  width: var(--table-open-days-content-td-width);
-  min-width: var(--table-open-days-content-td-width);
-}
-table.open-days tbody tr td:first-child {
-  border-left: var(--table-border);
-}
-table.open-days tbody tr td:not(:first-child) {
-  border-left: none;
-}
-table.open-days tbody tr:last-child td:last-child {
-  border-radius: 0 0 var(--table-border-radius) 0;
-}
-table.open-days tbody tr:last-child td:first-child {
-  border-radius: 0 0 0 var(--table-border-radius);
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* Align items to the start of the flex container */
 }
 
 .two-col-layout {
   display: inline-block;
   vertical-align: top;
 }
+
 .first-col {
   margin-right: 80px;
 }
+
 .first-col-less {
   margin-right: 50px;
 }
+
 .result {
   margin-top: 30px;
 }
@@ -671,12 +246,9 @@ table.open-days tbody tr:last-child td:first-child {
 li.main {
   margin-bottom: 15px;
 }
+
 li.main-teacher {
   margin-bottom: 20px;
-}
-
-.flex {
-  display: flex;
 }
 
 ul:not(.info) {
@@ -687,17 +259,21 @@ ul:not(.info) {
   padding-right: 20px;
   border: var(--table-border);
 }
+
 .period-info {
   margin-top: 50px;
   width: 1100px;
 }
+
 ul:not(.period):not(.info) {
   height: 500px;
   overflow-y: auto;
 }
+
 ul.teachers-ul {
   width: 700px;
 }
+
 ul.levels-ul {
   width: 250px;
 }
@@ -708,6 +284,7 @@ ul.levels-ul {
 #erase-constraints {
   width: 120px;
 }
+
 .credits {
   position: absolute;
   top: 0;
@@ -720,9 +297,11 @@ ul.levels-ul {
   font-weight: bold; /* Mettre en gras si nécessaire */
   z-index: 1000;
 }
+
 .export {
-  margin-right: 60px
+  margin-right: 60px;
 }
+
 #score {
   font-size: large;
 }
