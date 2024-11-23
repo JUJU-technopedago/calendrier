@@ -148,14 +148,19 @@ select:not(.bigger):hover {
 .margin {
   margin-right: 15px;
 }
-.custom-file-input {
-    background-color: #f3f3f3;  /* Light gray background, adjust as needed */
-    border: 1px solid #ccc;  /* Standard light border for the 'button' look */
-    padding: 5px 10px;  /* Padding to make it look like a button */
-    text-decoration: none;  /* Removes underline from links if used on <a> */
-    cursor: pointer;  /* Cursor indicates clickable item */
-    display: inline-block;  /* Ensures label and link behave like a button */
-    margin-right: 10px;  /* Space after the button */
+.custom-file-input, a.custom-file-input {
+    background-color: #ffffff; /* White background for the button */
+    border: 1px solid #ccc; /* Gray border */
+    padding: 8px 15px; /* Padding inside the button */
+    font-size: 14px; /* Font size */
+    color: #333; /* Text color */
+    text-align: center; /* Centers text */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline for the link */
+    border-radius: 4px; /* Rounded corners for the button */
+    display: inline-flex; /* Inline flex container for centering content */
+    align-items: center; /* Center alignment of the text/icon */
+    justify-content: center; /* Center justification for content */
 }
 .custom-file-input:hover {
   background-color: var(--button-color-hover);
@@ -163,8 +168,12 @@ select:not(.bigger):hover {
 }
 .file-upload-group {
     display: flex;
-    align-items: center; /* Vertically centers the items */
-    flex-wrap: wrap; /* Allows wrapping if needed */
+    align-items: center; /* Ensures vertical alignment is centered */
+    justify-content: start; /* Aligns items to the start of the container */
+    gap: 20px; /* Space between elements */
+    padding: 10px; /* Padding around the items for better spacing */
+    background: #f9f9f9; /* Optional background color for the group */
+    border-radius: 5px; /* Rounded corners for the group */
 }
 
 .button-container {
