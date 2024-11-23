@@ -227,11 +227,14 @@ button.reset {
 }
 
 .two-col-layout .button-group button {
-  padding: 5px 15px; /* Increase padding for better text fit */
-  width: auto; /* Allow button to expand based on text length */
-  min-width: 120px; /* Minimum width to handle smaller texts gracefully */
-  text-align: center; /* Ensure text is centered */
-  white-space: nowrap; /* Prevent text from wrapping */
+  padding: 5px 15px; /* Adjust padding */
+  width: auto; /* Allow button width to be based on content */
+  min-width: 120px; /* Ensure a minimum width for smaller text */
+  font-size: smaller; /* Reduce font size for better fit */
+  text-align: center; /* Center the text */
+  white-space: nowrap; /* Prevent the text from wrapping */
+  overflow: hidden; /* Hide any overflow */
+  text-overflow: ellipsis; /* Use ellipsis for overflow */
 }
 
 .first-col {
