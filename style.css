@@ -226,15 +226,18 @@ button.reset {
   align-items: start; /* Align items to the start of the flex container */
 }
 
+/* Specific styling for buttons in the Professeurs et niveaux section */
 .two-col-layout .button-group button {
-  padding: 5px 15px; /* Adjust padding */
-  width: auto; /* Allow button width to be based on content */
-  min-width: 120px; /* Ensure a minimum width for smaller text */
-  font-size: smaller; /* Reduce font size for better fit */
-  text-align: center; /* Center the text */
-  white-space: nowrap; /* Prevent the text from wrapping */
-  overflow: hidden; /* Hide any overflow */
-  text-overflow: ellipsis; /* Use ellipsis for overflow */
+  padding: 5px 15px; /* Good padding for spacing around text */
+  width: auto; /* Allows the button to grow with the text */
+  min-width: 150px; /* Increased minimum width to handle 'Télécharger le modèle' */
+  text-align: center; /* Ensure text is centered */
+  margin-top: 10px; /* Adds space above the button, especially useful for the second button */
+}
+
+/* Target only the second button for specific adjustments */
+.two-col-layout .button-group button:nth-child(2) {
+  min-width: 180px; /* A specific width to ensure 'Télécharger le modèle' fits */
 }
 
 .first-col {
