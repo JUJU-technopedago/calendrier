@@ -226,9 +226,12 @@ button.reset {
   align-items: start; /* Align items to the start of the flex container */
 }
 
-.two-col-layout {
-  display: inline-block;
-  vertical-align: top;
+.two-col-layout .button-group button {
+  padding: 5px 15px; /* Increase padding for better text fit */
+  width: auto; /* Allow button to expand based on text length */
+  min-width: 120px; /* Minimum width to handle smaller texts gracefully */
+  text-align: center; /* Ensure text is centered */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .first-col {
