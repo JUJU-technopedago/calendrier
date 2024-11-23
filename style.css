@@ -149,15 +149,6 @@ select:not(.bigger):hover {
   margin-right: 15px;
 }
 .custom-file-input {
-  display: inline-block;
-  padding: 4px 8px;
-  border: var(--table-border);
-  color: var(--text-color);
-  background-color: var(--button-color);
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: small;
-}
 .custom-file-input:hover {
   background-color: var(--button-color-hover);
 }
