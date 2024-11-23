@@ -710,14 +710,14 @@ ul.levels-ul {
 }
 .credits {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 5px;
-  text-align: left;
-  font-size: 12px;
-  z-index: 1000;
+  top: 0;   /* Ajustez cette valeur si nécessaire pour descendre le texte un peu plus bas */
+  right: 0; /* Alignez à droite de la page */
+  padding: 5px 10px; /* Ajustez le padding pour un meilleur espacement */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparence pour le fond */
+  font-size: 12px; /* Taille de la police */
+  z-index: 1000; /* Assurez-vous qu'il est au-dessus des autres éléments */
 }
+
 .export {
   margin-right: 60px
 }
