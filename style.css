@@ -189,6 +189,13 @@ input[type="submit"].navigation {
   background-color: var(--navigation-button-color);
   font-size: medium;
 }
+.file-upload-group {
+  display: flex;
+  flex-direction: column;
+}
+.custom-file-input.margin {
+  margin-bottom: 20px; /* Adjust this value as needed to increase spacing */
+}
 button.navigation:hover,
 input[type="submit"].navigation:hover {
   background-color: var(--navigation-button-color-hover);
