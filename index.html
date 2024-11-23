@@ -257,6 +257,23 @@
       </div>
     </div>
     <!-- Load util files -->
+     <script>
+      // Ensure the file input is triggered when the "Importer CSV" button is clicked
+      document.getElementById('import-csv-btn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        document.getElementById('file-input').click(); // Trigger the file input click
+      });
+
+      // Handle file upload when a file is selected
+      function handleFileUpload() {
+        const fileInput = document.getElementById('file-input');
+        if (fileInput.files.length > 0) {
+          // Handle the file upload here
+          console.log('File selected:', fileInput.files[0].name);
+          document.getElementById('data-loaded').textContent = 'Données chargées'; // Update the message
+        }
+      }
+    </script>
     <script src="utils/common-util.js"></script>
     <script src="utils/html-conditions-builder-util.js"></script>
     <script src="utils/html-result-confirmations-builder-util.js"></script>
