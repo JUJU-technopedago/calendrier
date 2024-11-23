@@ -106,8 +106,10 @@
     <label for="file-input" class="custom-file-input margin">Importer csv</label>
     <span id="data-loaded">Pas de données.</span>
   </div>
-  <button class="custom-file-input margin" onclick="downloadTemplate()">Télécharger le modèle</button>
+  <!-- Anchor tag for downloading the CSV template -->
+  <a href="data.csv" download class="custom-file-input margin">Télécharger le modèle</a>
 </div>
+
 <div id="erase-data" style="display: none">
   <button class="csv" onclick="erase()">Effacer</button>
 </div>
