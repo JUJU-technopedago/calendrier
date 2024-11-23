@@ -12,10 +12,6 @@
     <link rel="icon" type="image/x-icon" href="icon.png" />
   </head>
   <body>
-      <div class="credits">
-    Imaginé par <strong>Julien MARTINEZ-MONNIELLO</strong><br>
-    Développé par <strong>Thomas GOUROUZA</strong>
-  </div>
     <div id="settings-wrapper" class="page">
       <div class="two-col-layout first-col">
         <form name="parameter-form">
@@ -24,15 +20,15 @@
             class="navigation"
             value="Suivant &nbsp;&nbsp; →"
           />
-          <h1 class="parameters">Paramètres de la session</h1>
+          <h1 class="parameters">Paramètres</h1>
           <div>
             <table class="parameter">
               <thead>
                 <tr>
                   <th>Date de début</th>
-                  <th>Nombre de séances</th>
+                  <th>Nombre de jours</th>
                   <th>Jours fériés</th>
-                  <th>Durée d'une séance</th>
+                  <th>Durée d'une leçon</th>
                 </tr>
               </thead>
               <tbody>
@@ -106,9 +102,6 @@
             >
             <input type="file" id="file-input" />
           </div>
-          <div style="margin-top: 20px;">
-  <button onclick="window.location.href='data.csv'" class="custom-file-input margin">Télécharger le modèle</button>
-</div>
           <div id="erase-data" style="display: none">
             <button class="csv" onclick="erase()">Effacer</button>
           </div>
