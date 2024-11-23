@@ -662,7 +662,7 @@ table.open-days tbody tr:last-child td:first-child {
   font-size: 16px; /* Taille de police encore plus grande */
   text-align: right;
   font-family: Helvetica; /* Police plus professionnelle */
-  font-weight: bold; /* Maintien du texte en gras */
+  font-weight: normal; /* Maintien du texte en gras */
   z-index: 1000;
 }
 .two-col-layout {
