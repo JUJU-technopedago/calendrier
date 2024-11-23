@@ -102,9 +102,9 @@
         <div class="flex">
 <div id="not-erase-data" class="file-upload-group">
     <!-- For the "Importer CSV" button -->
-    <a href="#" class="custom-file-input navigation">Importer csv</a>
+    <a href="#" class="custom-file-input navigation" id="import-csv-btn">Importer csv</a>
     
-    <input type="file" id="file-input" class="hidden">
+    <input type="file" id="file-input" class="hidden" onchange="handleFileUpload()" />
     
     <span id="data-loaded">Pas de données.</span>
 
