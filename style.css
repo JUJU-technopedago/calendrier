@@ -714,11 +714,12 @@ ul.levels-ul {
   right: 0;
   padding: 5px 10px;
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 12px;
-  text-align: right; /* Aligne le texte à droite */
+  font-size: 14px; /* Taille de police plus grande */
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif; /* Police plus professionnelle */
+  font-weight: bold; /* Mettre en gras si nécessaire */
   z-index: 1000;
 }
-
 .export {
   margin-right: 60px
 }
