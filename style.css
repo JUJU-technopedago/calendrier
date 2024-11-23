@@ -149,10 +149,12 @@ select:not(.bigger):hover {
   margin-right: 15px;
 }
 .custom-file-input {
-    cursor: pointer;
-    margin-right: 10px; /* Add space after the button */
-    padding: 5px 10px; /* Add padding to increase clickable area */
-    white-space: nowrap; /* Prevent text from wrapping inside the button */
+    background-color: #f3f3f3; /* Light gray background, adjust as needed */
+    border: 1px solid #ccc; /* Standard light border for the 'button' look */
+    padding: 5px 10px; /* Padding to make it look like a button */
+    text-decoration: none; /* Removes underline from links if used on <a> */
+    cursor: pointer; /* Cursor indicates clickable item */
+    margin-right: 10px; /* Space after the button */
 }
 .custom-file-input:hover {
   background-color: var(--button-color-hover);
@@ -166,21 +168,20 @@ select:not(.bigger):hover {
 
 .button-container {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
-    flex-grow: 1; /* Allows the container to take up available space */
-    white-space: nowrap; /* Prevents text inside from wrapping */
+    align-items: center; /* Ensures items are aligned in the middle vertically */
+    flex-grow: 1; /* Allows this container to grow as needed */
 }
 
 .hidden {
-    display: none; /* Keeps input hidden as you already have */
+    display: none; /* Ensures the actual file input is hidden */
 }
 #data-loaded {
-    margin-left: auto; /* Pushes the text to the right */
-    white-space: nowrap; /* Prevent text from wrapping */
+    margin-left: auto; /* Pushes the no data text to the right */
+    padding: 5px 0; /* Vertical padding to align text vertically */
 }
 
 .custom-file-input.margin {
-    min-width: 150px; /* Set minimum width to fit the text */
+    min-width: 150px; /* Minimum width to accommodate the text */
 }
 .csv {
   width: 100px;
