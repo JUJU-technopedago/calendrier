@@ -192,6 +192,8 @@ input[type="submit"].navigation {
 .file-upload-group {
   display: flex;
   flex-direction: column;
+  width: 100%;  /* Ensure the container takes full width to accommodate the widest button */
+  align-items: flex-start;
 }
 .custom-file-input.margin {
   margin-bottom: 20px; /* Adjust this value as needed to increase spacing */
