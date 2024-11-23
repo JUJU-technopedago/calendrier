@@ -708,7 +708,16 @@ ul.levels-ul {
 #erase-constraints {
   width: 120px;
 }
-
+.credits {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);  /* Fond semi-transparent */
+  font-size: 12px;
+  z-index: 1000;  /* Assure que le texte reste au-dessus des autres éléments */
+}
 .export {
   margin-right: 60px
 }
