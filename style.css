@@ -160,8 +160,8 @@ select:not(.bigger):hover {
 }
 .file-upload-group {
     display: flex;
-    align-items: center; /* Ensure items are vertically centered */
-    flex-wrap: wrap; /* Allows items to wrap onto the next line if space is insufficient */
+    align-items: center; /* Vertically centers the items */
+    flex-wrap: wrap; /* Allows wrapping if needed */
 }
 
 .button-container {
