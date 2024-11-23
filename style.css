@@ -149,36 +149,20 @@ select:not(.bigger):hover {
   margin-right: 15px;
 }
 .custom-file-input {
-  width: 100%; /* Make both buttons stretch to fill the container */
-  margin-bottom: 20px; /* Consistent spacing between the buttons */
-}
-.button-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; /* Ensure the container is full width to align both message and button properly */
+  display: inline-block;
+  padding: 4px 8px;
+  border: var(--table-border);
+  color: var(--text-color);
+  background-color: var(--button-color);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: small;
 }
 .custom-file-input:hover {
   background-color: var(--button-color-hover);
 }
 .csv {
   width: 100px;
-}
-#data-loaded {
-  margin-left: 10px;
-  color: var(--text-color);
-  flex-grow: 1; /* Allows the message to take up any remaining space */
-}
-.hidden {
-  display: none; /* Ensures file input does not affect layout */
-}
-.data-message {
-  display: inline-block;
-  padding: 4px 8px;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  border-radius: 5px;
-  font-size: smaller;
 }
 button:not(.csv):not(.generate):not(.reset),
 input[type="submit"]:not(.add) {
@@ -204,15 +188,6 @@ button.navigation,
 input[type="submit"].navigation {
   background-color: var(--navigation-button-color);
   font-size: medium;
-}
-.file-upload-group {
-  display: flex;
-  flex-direction: column;
-  width: 100%;  /* Ensure the container takes full width to accommodate the widest button */
-  align-items: flex-start;
-}
-.custom-file-input.margin {
-  margin-bottom: 20px; /* Adjust this value as needed to increase spacing */
 }
 button.navigation:hover,
 input[type="submit"].navigation:hover {
@@ -678,18 +653,7 @@ table.open-days tbody tr:last-child td:last-child {
 table.open-days tbody tr:last-child td:first-child {
   border-radius: 0 0 0 var(--table-border-radius);
 }
-.credits {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 16px; /* Taille de police encore plus grande */
-  text-align: right;
-  font-family: Helvetica; /* Police plus professionnelle */
-  font-weight: normal; /* Maintien du texte en gras */
-  z-index: 1000;
-}
+
 .two-col-layout {
   display: inline-block;
   vertical-align: top;
