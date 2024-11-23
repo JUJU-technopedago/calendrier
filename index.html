@@ -275,8 +275,8 @@ function downloadModelCSV() {
   // Create a link element
   const link = document.createElement('a');
   
-  // Set the href to the location of the 'data.csv' file in the root of the repository
-  link.setAttribute('href', '/data.csv');  // Path to the CSV file in the root directory
+  // Set the href to the location of 'data.csv' on GitHub Pages
+  link.setAttribute('href', 'https://juju-technopedago.github.io/calendrier/data.csv');  // URL to your CSV file
   link.setAttribute('download', 'data.csv');  // The file will be downloaded with this name
   
   // Append the link, trigger a click to download the file, and remove the link after download
@@ -284,6 +284,7 @@ function downloadModelCSV() {
   link.click();
   document.body.removeChild(link);
 }
+
 </script>
   </body>
 </html>
