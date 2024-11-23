@@ -101,10 +101,15 @@
         <h1 class="teachers-levels">Professeurs et niveaux</h1>
         <div class="flex">
 <div id="not-erase-data" class="file-upload-group">
-    <label for="file-input" class="custom-file-input">Importer csv</label>
+    <!-- For the "Importer CSV" button -->
+    <a href="#" class="custom-file-input navigation">Importer csv</a>
+    
     <input type="file" id="file-input" class="hidden">
+    
     <span id="data-loaded">Pas de données.</span>
-    <a href="data.csv" download="data.csv" class="custom-file-input">Télécharger le modèle</a>
+
+    <!-- For the "Télécharger le modèle" button -->
+    <a href="data.csv" download="data.csv" class="custom-file-input navigation">Télécharger le modèle</a>
 </div>
 
 <div id="erase-data" style="display: none">
