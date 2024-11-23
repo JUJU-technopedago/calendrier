@@ -149,20 +149,36 @@ select:not(.bigger):hover {
   margin-right: 15px;
 }
 .custom-file-input {
-  display: inline-block;
-  padding: 4px 8px;
-  border: var(--table-border);
-  color: var(--text-color);
-  background-color: var(--button-color);
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: small;
+  width: 100%; /* Make both buttons stretch to fill the container */
+  margin-bottom: 20px; /* Consistent spacing between the buttons */
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ensure the container is full width to align both message and button properly */
 }
 .custom-file-input:hover {
   background-color: var(--button-color-hover);
 }
 .csv {
   width: 100px;
+}
+#data-loaded {
+  margin-left: 10px;
+  color: var(--text-color);
+  flex-grow: 1; /* Allows the message to take up any remaining space */
+}
+.hidden {
+  display: none; /* Ensures file input does not affect layout */
+}
+.data-message {
+  display: inline-block;
+  padding: 4px 8px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border-radius: 5px;
+  font-size: smaller;
 }
 button:not(.csv):not(.generate):not(.reset),
 input[type="submit"]:not(.add) {
