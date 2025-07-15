@@ -8,7 +8,15 @@ function getLessons(dates, teachers, levels, lessonDuration, selectedDates) {
       lessonDuration,
       selectedDates
     );
-    finalLessonLists.push({list, score});
+    const score = getScoreForCalendarGeneration(
+      list,
+      teachers,
+      selectedDates,
+      parameter.numberDays,
+      lessonDuration,
+      openDays
+    );
+    finalLessonLists.push({ list, score });
   }
   const maxlength = Math.max(...finalLessonLists.map(item => item.list.length));
   return finalLessonLists.find(item => item.list.length === maxlength).list;
